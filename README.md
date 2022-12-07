@@ -16,13 +16,13 @@
 - open http://127.0.0.1:8000/docs and choose  `POST /predict`
 - click : `Try it out`
 - input request body 
-'''
+```
 {
   "tv": 0,
   "radio": 0,
   "newspaper": 0
 }
-'''
+```
 
 ### using postman
 
