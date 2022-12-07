@@ -23,6 +23,22 @@
   "newspaper": 0
 }
 ```
+- click `Execute`
 
 ### using postman
+- open Postman
+- input request body 
+```
+{
+  "tv": 0,
+  "radio": 0,
+  "newspaper": 0
+}
+```
+- click `run`
 
+### using python
+- run using python requests post
+```
+python request_post.py
+```
