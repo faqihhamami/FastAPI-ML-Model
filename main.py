@@ -35,3 +35,9 @@ def sales(sales: Sales):
     prediction = int(prediction[0])
 
     return prediction
+
+
+## How to run
+# open cmd and run : uvicorn main:app --reload
+# open browser and type : http://127.0.0.1:8000
+# or open http://127.0.0.1:8000/docs
