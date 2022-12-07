@@ -8,37 +8,37 @@
 - Docker
 
 ## Run the API
-- open terminal / cmd and type `uvicorn main:app --reload`
-- open browser and type `http://127.0.0.1:8000`
+- Open terminal / cmd and type `uvicorn main:app --reload`
+- Open browser and type `http://127.0.0.1:8000`
 - or open `http://127.0.0.1:8000/docs`
 
 ### using swagger UI
-- open http://127.0.0.1:8000/docs and choose  `POST /predict`
-- click : `Try it out`
-- input request body 
+- Open http://127.0.0.1:8000/docs and choose  `POST /predict`
+- Click : `Try it out`
+- Input request body 
 ```
 {
-  "tv": 0,
+  "tv": 292.9,
   "radio": 0,
   "newspaper": 0
 }
 ```
-- click `Execute`
+- Click `Execute`
 
 ### using postman
-- open Postman
-- input request body 
+- Open Postman
+- Input request body 
 ```
 {
-  "tv": 0,
+  "tv": 292.9,
   "radio": 0,
   "newspaper": 0
 }
 ```
-- click `run`
+- Click `run`
 
 ### using python
-- run using python requests post
+- Run using python requests post
 ```
 python request_post.py
 ```
