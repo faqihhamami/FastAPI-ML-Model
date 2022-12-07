@@ -26,8 +26,7 @@
 - Click `Execute`
 
 ### using postman
-- Open Postman
-- Input request body 
+Open Postman and input request body 
 ```
 {
   "tv": 292.9,
@@ -35,10 +34,10 @@
   "newspaper": 0
 }
 ```
-- Click `run`
+Click `run`
 
 ### using python
-- Run using python requests post
+Run using python requests post
 ```
 python request_post.py
 ```
