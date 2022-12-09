@@ -11,4 +11,4 @@ ads = {
 response = requests.post(URL, json=ads)
 prediction = response.json()
 
-print("Car price prediction: ", prediction)
+print("total sales prediction: ", prediction)

@@ -37,7 +37,44 @@ Open Postman and input request body
 Click `run`
 
 ### using python
-Run using python requests post
+Run using python requests
 ```
 python request_post.py
 ```
+
+## Deployement
+Deploy Fast API using docker. Make sure you have installed Docker in your system. 
+1. Deploy model using docker
+```
+docker build -t fastapi-sales-pred . 
+```
+
+2. Run docker 
+docker run -d -p 8900:8900 fastapi-sales-pred
+
+## Docker container
+show all images
+```
+docker images
+```
+
+start container
+```
+docker start <container_name>
+```
+
+stop container
+```
+docker stop <container_name>
+```
+
+remove container
+```
+docker rm <container_name>
+```
+
+bash shell in container
+```
+docker exec -it <container_name> /bin/bash 
+```
+## Deploy to Docker hub
