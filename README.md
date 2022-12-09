@@ -66,7 +66,7 @@ Deploy Fast API using docker. Make sure you have installed Docker in your system
 docker build -t fastapi-sales-pred . 
 ```
 
-2. Run docker 
+2. Run container on background
 ```
 docker run -d -p 8900:8900 fastapi-sales-pred
 ```
@@ -96,6 +96,28 @@ bash shell in container
 ```
 docker exec -it <container_name> /bin/bash 
 ```
-## Deploy to Docker hub
 
+## Deploy to Docker hub
+Let's tag and push the image to Docker Hub. Make sure you have created account on Docker Hub
+
+1. Get access token from `docker hub - account settings` and click `tab security - new access token` and copy it
+
+2. Run docker CLI on terminal
+```
+docker login -u <USER>
+```
+and at the password prompt, enter the personal access token. or just use your docker hub password
+
+* <USER> is your Docker Hub username
+
+3. Tag the image
+```
+docker image tag fastapi-sales-pred <USER>/fastapi-sales-pred:latest
+```
+
+4. push it to Docker Hub
+```
+docker image push <USER>/fastapi-sales-pred:latest
+```
+5. Check `fastapi-sales-pred:latest` image on your Docker Hub repository
 
