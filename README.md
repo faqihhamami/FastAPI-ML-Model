@@ -106,8 +106,8 @@ Let's tag and push the image to Docker Hub. Make sure you have created account o
 ```
 docker login -u <USER>
 ```
-and at the password prompt, enter the personal access token. or just use your docker hub password
-<USER> is your Docker Hub username
+and at the password prompt, enter the personal access token. or just use your docker hub password.
+`<USER>` is your Docker Hub username
 
 3. Tag the image
 ```
