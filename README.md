@@ -107,8 +107,7 @@ Let's tag and push the image to Docker Hub. Make sure you have created account o
 docker login -u <USER>
 ```
 and at the password prompt, enter the personal access token. or just use your docker hub password
-
-* <USER> is your Docker Hub username
+<USER> is your Docker Hub username
 
 3. Tag the image
 ```
@@ -119,5 +118,6 @@ docker image tag fastapi-sales-pred <USER>/fastapi-sales-pred:latest
 ```
 docker image push <USER>/fastapi-sales-pred:latest
 ```
+
 5. Check `fastapi-sales-pred:latest` image on your Docker Hub repository
 
