@@ -42,6 +42,23 @@ Run using python requests
 python request_post.py
 ```
 
+## Conda environment
+It is better to run on python environment. 
+1. create conda environment
+```
+conda create --name fastapi-sales-pred
+```
+
+2. Activate the conda environment:
+```
+conda activate fastapi-sales-pred
+```
+
+3. Install the project dependencies:
+```
+pip install -r requirements.txt
+```
+
 ## Deployement
 Deploy Fast API using docker. Make sure you have installed Docker in your system. 
 1. Deploy model using docker
@@ -50,7 +67,9 @@ docker build -t fastapi-sales-pred .
 ```
 
 2. Run docker 
+```
 docker run -d -p 8900:8900 fastapi-sales-pred
+```
 
 ## Docker container
 show all images
@@ -78,3 +97,5 @@ bash shell in container
 docker exec -it <container_name> /bin/bash 
 ```
 ## Deploy to Docker hub
+
+
